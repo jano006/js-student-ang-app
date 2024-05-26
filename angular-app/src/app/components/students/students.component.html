@@ -9,13 +9,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>John Smith</td>
-          <td><a href="mailto:john@smith.com">john&#64;smith.com</a></td>
+        <tr *ngFor="let student of students">
+          <td>{{student.id}}</td>
+          <td>{{student.name}}</td>
           <td>
-            <a href="#" class="button button-green">Edit</a>
-            <button class="button button-red">Delete</button>
+            <a href="mailto:{{student.email}}">{{student.email}}</a>
+          </td>
+          <td>
+            <a href="#" class="button button-green">Edytuj</a>
+            <button class="button button-red">Usuń</button>
           </td>
         </tr>
       </tbody>

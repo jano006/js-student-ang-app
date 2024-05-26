@@ -10,5 +10,5 @@ import { StudentsComponent } from './components/students/students.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-app';
+  title : string = 'angular-app';
 }
