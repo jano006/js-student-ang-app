@@ -1,1 +1,1 @@
-# student-angular-app
+# Student Angular App
